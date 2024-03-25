@@ -303,7 +303,7 @@
             <li><a href="#">Policy</a></li>
         </ul>
         <ul class="main-nav">
-            <li class="logo"><a href="#">Shortner</a></li>
+            <li class="logo"><a href="#">isURL</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Solution</a></li>
             <li><a href="#">Pricing</a></li>
@@ -315,7 +315,7 @@
             <li onclick="openx()"><span class="material-symbols-outlined">
                     menu
                 </span></li>
-            <li><a href="#">Shortner</a></li>
+            <li><a href="#">isURL</a></li>
         </ul>
     </nav>
     <main>
@@ -365,7 +365,7 @@
         return (res !== null)
     }
     async function getSortLink(inpLink) {
-        let res = await fetch(`http://localhost:3000/api?link=${inpLink}`, { method: "POST" })
+        let res = await fetch(`https://isurl.onrender.com/api?link=${inpLink}`, { method: "POST" })
         let sortLink = await res.json()
         return sortLink
     }
