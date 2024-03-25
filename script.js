@@ -47,7 +47,7 @@ app.post('/api/', async (req, res) => {
   }
   await generateUniqueRandom();
 
-  res.json(`${process.env.LC_HOST}${port}/` + random);
+  res.json(`https://isurl.onrender.com//` + random);
 });
 
 
